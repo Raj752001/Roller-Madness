@@ -4,7 +4,7 @@ using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Vehicles.Ball
 {
-    public class BallUserControl : MonoBehaviour
+    public class BallUserControl : Joystick
     {
         private Ball ball; // Reference to the ball controller.
 
@@ -14,7 +14,7 @@ namespace UnityStandardAssets.Vehicles.Ball
         private Transform cam; // A reference to the main camera in the scenes transform
         private Vector3 camForward; // The current forward direction of the camera
         private bool jump; // whether the jump button is currently pressed
-
+        public Joystick controller;
 
         private void Awake()
         {
